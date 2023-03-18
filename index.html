@@ -41,7 +41,7 @@
       <!--Hero section-->
       <section class="section-hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-btn" type="button" data-modal-open>Order Service</button>
+        <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
       </section>
 
       <!--About section-->
@@ -387,14 +387,61 @@
       </div> 
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close-modal"></use>
           </svg>
         </button>
-      </div>
+        <p class="form-modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-label">
+            <span class="input-name">Name</span>
+            <div class="modal-input-wrapper">
+             <input type="text" class="modal-input" name="user_name" required>
+              <svg class="modal-picture" width="18" height="18">
+               <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-label">
+            <span class="input-name">Phone</span>
+            <div class="modal-input-wrapper">
+              <input type="tel" class="modal-input" name="user_tel" required>
+              <svg class="modal-picture" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div> 
+          </label>
+
+          <label class="modal-label">
+            <span class="input-name">Email</span>
+            <div class="modal-input-wrapper">
+              <input type="email" class="modal-input" name="user_email">
+              <svg class="modal-picture" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div> 
+          </label>
+
+          <label class="modal-label-textarea">
+            <span class="input-name">Comment</span>
+            <textarea class="modal-textarea" placeholder="Text input" name="user_comment"></textarea>
+          </label>
+
+          <input type="checkbox" id="accept" class="input-checkbox" name="user_accept">
+          <label for="accept" class="modal-label-checkbox">I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy</a>
+            <span>
+             <svg class="checkbox-picture" width="10" height="8">
+              <use href="./images/icons.svg#click"></use>
+              </svg>
+            </span>
+          </label>
+          <button type="submit" class="modal-submit-btn btn">Send</button>
+        </form>
+      </div> 
     </div>
 
     <script src="./js/modal.js"></script>
