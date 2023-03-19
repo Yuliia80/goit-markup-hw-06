@@ -384,10 +384,21 @@
             </li>
           </ul>
         </div>
+        <div class="footer-threeblock">
+          <p class="footer-text-social">Subscribe</p>
+          <div class="footer-modalblock">
+            <input class="input-footer" type="email" name="user_email" placeholder="E-mail">
+            <button class="footer-submit-btn btn" type="submit" class="" >Subscribe
+              <svg class=modal-semd-icon width="24" height="20">
+               <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>  
+        </div>
       </div> 
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -431,13 +442,14 @@
             <textarea class="modal-textarea" placeholder="Text input" name="user_comment"></textarea>
           </label>
 
-          <input type="checkbox" id="accept" class="input-checkbox" name="user_accept">
-          <label for="accept" class="modal-label-checkbox">I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy</a>
+          <input type="checkbox" id="accept" class="input-checkbox visually-hidden" name="user_accept">
+          <label for="accept" class="modal-label-checkbox">
             <span>
-             <svg class="checkbox-picture" width="10" height="8">
-              <use href="./images/icons.svg#click"></use>
+              <svg class="checkbox-picture" width="10" height="8">
+                <use href="./images/icons.svg#click"></use>
               </svg>
             </span>
+            I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-submit-btn btn">Send</button>
         </form>
